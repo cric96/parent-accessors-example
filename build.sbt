@@ -4,7 +4,7 @@ name := "scala-macro-skeleton"
 
 version := "0.1"
 
-scalaVersion := "2.13.5"
+ThisBuild / scalaVersion := "2.13.5"
 
 val commonConfig = settings(
   scalacOptions ++= Seq(
@@ -16,6 +16,7 @@ val commonConfig = settings(
     "-feature",
     "-unchecked"
   ),
+
   libraryDependencies += "org.scala-lang" % "scala-reflect" % scalaVersion.value
 )
 
